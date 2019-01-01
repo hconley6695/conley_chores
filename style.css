@@ -1,0 +1,49 @@
+/*
+Theme Name: Twenty Seventeen Child
+Theme URL: http://localhost
+Description: Twenty Seventeen Child Theme
+Author: Heather Conley
+Author URL: http://localhost
+Template: twentyseventeen
+Version: 1.0.0
+Text Domain: twentyseventeen-child
+*/
+
+/*--------------------------------------------------------------
+Personal Styles
+--------------------------------------------------------------*/
+/*Front Page*/
+
+h1 {
+	color: #3b3b3b;
+	font-weight: bold;
+	text-align: center;
+	font-size: 64px;
+	margin: 50px 0; 
+}
+
+ul.user-list {
+	text-align: center;
+}
+
+ul.user-list li.single-user {
+	display: inline-block;
+	height: 130px;
+	width: 130px;
+	background-color: rgb(230, 180, 117);
+	border-color: rgb(102, 72, 52);
+	margin: 0 10px;
+	position: relative;
+}
+
+ul.user-list li.single-user > a {
+	height: 130px;
+	width: 130px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+ul.user-list li.single-user span {
+	font-family: fantasy;	
+}
