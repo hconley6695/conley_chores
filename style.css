@@ -44,6 +44,6 @@ ul.user-list li.single-user > a {
 	left: 0;
 }
 
-ul.user-list li.single-user span {
+ul.user-list li.single-user div.title {
 	font-family: fantasy;	
 }

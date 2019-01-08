@@ -24,6 +24,7 @@ register_post_type( 'Persons',
 	        'has_archive' => true,
 	        'supports' => array("title", "editor", "thumbnail", "custom-fields","page-attributes"),
 	        'menu_icon' => 'dashicons-editor-help',
+	        'rewrite' => array('slug' => 'person'),
 		)
     );
 }
@@ -36,4 +37,12 @@ function enqueue_parent_styles() {
    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
 
+
+// Show posts of 'post', 'page' and 'movie' post types on home page
+function add_my_post_types_to_query( $query ) {
+  if ( is_home() && $query->is_main_query() )
+    $query->set( 'post_type', array( 'Persons' ) );
+  return $query;
+}
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 ?>
