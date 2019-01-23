@@ -53,6 +53,25 @@ get_header();
 
 				</ul>
 			</section>
+
+<!-- 			<section class="section1">
+				<div class="class1"></div>
+				<div class="class2"></div>
+				<div class="class3"></div>
+				<div class="class4"></div>
+				<div class="class5"></div>
+				<div class="class6"></div>
+				<div class="class7"></div>
+			</section> -->
+<!-- 			<section class="section2">
+				<div class="class1"></div>
+				<div class="class2"></div>
+				<div class="class3"></div>
+				<div class="class4"></div>
+				<div class="class5"></div>
+				<div class="class6"></div>
+				<div class="class7"></div>
+			</section> -->
 		</div>
 
 		<?php  //Show the selected frontpage content.
@@ -89,4 +108,4 @@ get_header();
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_footer();
+<?php //get_footer();

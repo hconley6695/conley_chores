@@ -10,12 +10,33 @@
  * @version 1.2
  */
 
-?>
+
+
+	if ( ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
+		echo '<div class="single-featured-image-header">';
+		echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
+		echo '</div><!-- .single-featured-image-header -->';
+	endif;
+
+	?>
+			<section class="section2">
+				<div class="class1"></div>
+				<div class="class2"></div>
+				<div class="class3"></div>
+				<div class="class4"></div>
+				<div class="class5"></div>
+				<div class="class6"></div>
+				<div class="class7"></div>
+			</section>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
+
+
 	<?php
 	if ( is_sticky() && is_home() ) {
-		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
+		// echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
 	}
 	?>
 	<header class="entry-header">
@@ -41,6 +62,9 @@
 		?>
 	</header><!-- .entry-header -->
 
+
+
+
 	<!-- <?php //if ( '' !== get_the_post_thumbnail() && ! is_single() && ! get_post_gallery() ) : ?>
 		<div class="post-thumbnail">
 			<a href="<?php //the_permalink(); ?>">
@@ -63,16 +87,20 @@
 
 		};
 
-		if ( is_single() || ! get_post_gallery() ) {
+		if ( is_single() || ! get_post_gallery() ) {?>
+			<div class="person-information">
+				<?php the_meta(); ?>
 
-			the_meta(); ?>
+				<p>Today is <?php echo date("l"); ?>. </p>
 
-			<p>Today is <?php echo date("l"); ?>. </p>
+				<p>Click below to find out today's chores!</p>
 
-			<p>Click below to find out today's chores!</p>
-
-			<a href=""><?php echo date("l"); ?>'s chores</a>
-
+			</div>
+			<div class="button-wrapper">
+				<a href="<?get_home_url()?>" class="button-type">Get My Rewards</a>
+				<a href="" class="button-type"><?php echo date("l"); ?>'s chores</a>
+				<a href="<?=get_home_url()?>" class="button-type">HOME</a>
+			</div>	
 
 		<?php 
 			/* translators: %s: Name of current post */
@@ -90,6 +118,8 @@
 
 		};
 		?>
+
+
 
 	</div><!-- .entry-content -->
 

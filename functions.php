@@ -37,6 +37,12 @@ function enqueue_parent_styles() {
    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
 
+//Enqueue google fonts
+add_action( 'wp_enqueue_scripts', 'my_google_fonts' );
+function my_google_fonts() {
+	wp_enqueue_style( 'my-google-fonts', 'https://fonts.googleapis.com/css?family=Patua+One', false ); 
+}
+
 
 // Show posts of 'post', 'page' and 'movie' post types on home page
 function add_my_post_types_to_query( $query ) {

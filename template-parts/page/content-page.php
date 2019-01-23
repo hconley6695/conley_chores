@@ -18,6 +18,7 @@
 		<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
+
 		<?php
 			the_content();
 

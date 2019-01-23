@@ -13,9 +13,22 @@ Text Domain: twentyseventeen-child
 Personal Styles
 --------------------------------------------------------------*/
 /*Front Page*/
+body {
+	background-color: rgb(39, 48, 110);
+	font-family: 'Patua One', cursive;
+}
+
+#page .site-content-contain {
+	background-color: rgb(253, 253, 253);
+	min-height: 550px;
+}
+
+body.twentyseventeen-front-page div.site-content-contain div.site-content div.content-area main section {
+	padding: 30px 0;
+}
 
 h1 {
-	color: #3b3b3b;
+	color: rgb(39, 48, 110);
 	font-weight: bold;
 	text-align: center;
 	font-size: 64px;
@@ -28,22 +41,185 @@ ul.user-list {
 
 ul.user-list li.single-user {
 	display: inline-block;
-	height: 130px;
-	width: 130px;
-	background-color: rgb(230, 180, 117);
+	height: 140px;
+	width: 140px;
+	/*background-color: rgb(230, 180, 117);*/
 	border-color: rgb(102, 72, 52);
-	margin: 0 10px;
+	margin: 0 20px;
 	position: relative;
 }
 
 ul.user-list li.single-user > a {
-	height: 130px;
-	width: 130px;
+	height: 140px;
+	width: 140px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	border: 10px solid rgb(39, 48, 110);
+	border-radius: 5px 20px 5px;
+-webkit-box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
+-moz-box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
+box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
 }
 
 ul.user-list li.single-user div.title {
 	font-family: fantasy;	
 }
+/*
+section.section1 .class1 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(66, 94, 124);
+}
+
+section.section1 .class2 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(54, 63, 60);
+}
+section.section1 .class3 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(226, 180, 89);
+}
+section.section1 .class4 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(155, 82, 67);
+}
+section.section1 .class5 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(93, 70, 57);
+}
+section.section1 .class6 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(222, 154, 112);
+}
+section.section1 .class7 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(123, 50, 48);
+}*/
+section.section2 .class1 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(201, 139, 63);
+}
+section.section2 .class2 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(107, 64, 200);
+}
+section.section2 .class3 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(87, 125, 221);
+}
+section.section2 .class4 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(39, 48, 110);
+}
+section.section2 .class5 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(198, 168, 177);
+}
+
+section.section2 .class6 {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 4px;
+	background-color: rgb(234, 197, 160);
+}
+section.section2 .class7 {
+
+}
+
+
+/* Single Person Pages */
+body.single-persons #page div.site-content-contain {
+	/*background-color: rgb(234, 197, 160);*/
+}
+
+body.single-persons #page #primary {
+	width: 100%;
+}
+
+body.single-persons #page #primary .single-featured-image-header {
+	background-color: #ffffff;
+}
+
+body.single-persons #page #primary .single-featured-image-header > img {
+	height: 260px;
+	width: 260px;
+	border: 15px solid rgb(39, 48, 110);
+	border-radius: 5px 30px 5px;
+	-webkit-box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
+	-moz-box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
+	box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
+}
+body.single-persons div.entry-content {
+	text-align: center;
+}
+
+body.single-persons div.entry-content div.person-information {
+	width: 40%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+div.button-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+div.entry-content a.button-type {
+	height: 20px;
+	font-size: 16px;
+	background-color: rgb(39, 48, 110);
+	color: #ffffff;
+	border-radius: 2px;
+	margin: 10px;
+/*	-webkit-box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
+	-moz-box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);
+	box-shadow: 5px 5px 12px 2px rgba(128,128,128,1);*/
+	padding: 20px 10px 40px 10px;
+}
+
+div.entry-content a.button-type:hover {
+	color: #ffffff
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background-color: rgb(87, 125, 221);
+}
+
